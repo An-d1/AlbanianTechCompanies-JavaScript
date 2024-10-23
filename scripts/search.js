@@ -1,7 +1,7 @@
 import { companiesData } from "./data.js";
 
 function searchCompanies() {
-  const userInput = document.getElementById('searchInput');
+  const userInput = document.querySelector('.js-searchInput');
   
   userInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase();

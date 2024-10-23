@@ -115,10 +115,24 @@ body {
   border-bottom-right-radius: 13px;
 }
 
-.navbar,
-.navbar-brand {
+.navbar {
   font-family: poppins;
   font-size: 3.2vh;
+  color: #000000;
+}
+
+.navbar-brand {
+  font-family: poppins;
+  font-size: 5.2vh;
+  font-weight: 600;
+}
+
+.nav-link {
+  transition: transform 0.3s;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
 }
 
 .btn-outline-success {
