@@ -22,7 +22,7 @@ function searchCompanies() {
     });
 
     displayResults(searchResults);
-  }, 350)); // Adjust the delay as needed (in milliseconds)
+  }, 1000)); // Adjust the delay as needed (in milliseconds)
 }
 
 // Function to display search results on the page
