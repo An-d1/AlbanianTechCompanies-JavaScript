@@ -127,6 +127,10 @@ body {
   font-weight: 600;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(255, 255, 255);
+}
+
 .nav-link {
   transition: transform 0.3s;
 }
