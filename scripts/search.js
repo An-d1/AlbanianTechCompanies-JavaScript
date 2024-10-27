@@ -7,7 +7,7 @@ function searchCompanies() {
     const value = e.target.value.toLowerCase();
 
     const searchResults = companiesData.filter(company => {
-      return company.titleCompany.toLowerCase().includes(value); // filter based on input
+      return company.titleCompany.toLowerCase().includes(value) || company.formattedAddress.toLowerCase().includes(value)// filter based on input
     });
 
     displayResults(searchResults); // Display the filtered results
@@ -21,28 +21,33 @@ function displayResults(results) {
 
   if (results.length > 0) {
     results.forEach(company => {
-      const companyElement = `
-        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-          <div class="flex-container">
-            <a class="websiteLink" href="${company.website}" target="_blank">
-              <div class="mainImg">
-                <img src="images/1721802899_0a08ccaa9a91933a0b20.jpg" alt="${company.titleCompany}">
+      const companyElement =  `
+      <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+              <div class="flex-container">
+              <a class="websiteLink" href="${company.website}" target = _blank>
+    
+                <div class="mainImg">
+                  <img src="images/1721802899_0a08ccaa9a91933a0b20.jpg">
+                </div>
+    
+                <div class="title">
+                  "${company.titleCompany}"
+                </div>
+    
+                <div class="address">
+                  Address: ${company.formattedAddress}
+                </div>
+                </a>
+    
+                <a href="${company.link}" target = _blank>
+                <button class="location">
+                  open in google maps
+                </button>
+                </a>
+                
               </div>
-              <div class="title">
-                ${company.titleCompany}
-              </div>
-              <div class="category">
-                Description: ${company.category}
-              </div>
-            </a>
-            <a href="${company.link}" target="_blank">
-              <button class="location">
-                Open in Google Maps
-              </button>
-            </a>
-          </div>
-        </div>
-      `;
+            </div>
+        `;
 
       resultsDiv.innerHTML += companyElement;
     });

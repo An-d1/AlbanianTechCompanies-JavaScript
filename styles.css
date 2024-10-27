@@ -61,7 +61,7 @@ body {
   margin-bottom: 1.5vh;
 }
 
-.category {
+.address {
   font-family: poppins;
   color: black;
   font-weight: 400;
@@ -152,4 +152,8 @@ body {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #85242f;
   --bs-gradient: none;
+}
+
+.companiesContainer {
+  margin-bottom: 10vh;
 }
