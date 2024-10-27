@@ -110,7 +110,7 @@ body {
 */
 
 .bg-body-tertiary { 
-  background-color: rgba(83, 69, 138, 0.653) !important;
+  background-color: rgb(83, 69, 138) !important;
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
 }
