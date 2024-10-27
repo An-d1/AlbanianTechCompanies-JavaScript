@@ -139,6 +139,12 @@ body {
   transform: scale(1.1);
 }
 
+@media (max-width: 800px) {
+  .nav-link:hover {
+    transform: scale(1.03);
+  }
+}
+
 .btn-outline-success {
   --bs-btn-color: #85242f;
   --bs-btn-bg: #000000;
