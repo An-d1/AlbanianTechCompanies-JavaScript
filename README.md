@@ -3,7 +3,9 @@ The data is from https://github.com/nidabaci/albaniantechmap/blob/master/src/dat
 --------------------------------------------------
 Albanian Tech Companies Directory
 
-This project is a directory of Albanian tech companies, designed to help users quickly find information about tech companies in Albania, including their websites and locations. The app includes a responsive search feature, allowing users to search by company name or address.
+This project is a directory of Albanian tech companies, designed to help users quickly find information about tech companies in Albania, including their websites and locations. The app features a responsive search function, enabling users to search by company name or address.
+
+THE PROJECT WAS BUILT ON BASICS.
 
 Features
    •   Live Search with Debouncing: Implements a real-time search with debouncing to minimize performance issues, especially on mobile devices.
